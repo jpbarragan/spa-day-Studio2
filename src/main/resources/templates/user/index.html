@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
+
 </head>
 <body>
-    <p th:text="${user.username}"></p>
+<h3>Welcome!</h3>
+    <p th:text="'Welcome, ' + ${user.username} + '!'"></p>
+    <a th:href="@{/}">Click here to select our services</a>
 </body>
 </html>
